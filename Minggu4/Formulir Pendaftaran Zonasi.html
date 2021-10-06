@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Formulir Pendaftaran</title>
+</head>
+<body style="background-color: #FF69B4;">
+	<div class="wrap">
+		<h1 class="header1" align="center">FORMULIR PBB JALUR ZONASI TAHUN 2020</h1>
+		<hr align="center" width="680">
+		<form action="formPendaftaran.php" method="POST">
+		<table style="width: 100%">
+			<tr>
+				<td><b>INFO PENDAFTARAN</b></td>
+			</tr>
+			<tr>
+				<td><label>NISN</label></td>
+				<td>: <input type="text" name="NISN" id="NISN" size="80"style="height: 20px;" ></td>
+			</tr>
+			<tr>
+				<td><label>Asal Sekolah</label></td>
+				<td>: <input type="text" name="asalSekolah" id="asalSekolah" size="80"style="height: 20px;"></td>
+			</tr>
+			<tr>
+				<td><label>Tahun Lulus</label></td>
+				<td>: <input type="text" name="tahunLulus" id="tahunLulus" size="80"style="height: 20px;"></td>
+			</tr>
+			<tr>
+				<td align="right"><i>(Lampirkan Foto Copy Ijazah)</td></i>
+				<td>: <input type="file" name="foto" accept="image/*"></td>
+			</tr>
+			<tr>
+				<td><b>DATA CALON PESERTA</b></td>
+			</tr>
+			<tr>
+				<td>Nama Lengkap</td>
+				<td>: <input type="text" name="namaLengkap" id="namaLengkap" size="80"style="height: 20px;"></td>
+			</tr>
+			<tr>
+				<td>NIK</td>
+				<td>: <input type="text" name="nik" id="nik" size="80"style="height: 20px;"></td>
+			</tr>
+			<tr>
+				<td>Tempat, Tanggal Lahir</td>
+				<td>: <input type="text" name="tempatLahir" id="tempatLahir"style="height: 20px;">, <input type="date" id="tanggalLahir" name="tanggalLahir"></td>
+			</tr>
+			<tr>
+				<td align="right"><i>(Foto Copy Akte Kelahiran Yang Telah di Legalisir)</td></i>
+				<td>: <input type="file" name="foto" accept="image/*"></td>
+			</tr>
+			<tr>
+				<td>Jenis Kelamin</td>
+				<td>: <input type="radio" id="jenisKelamin" name="jenisKelamin" value="Laki - Laki">
+					<label for="jenisKelamin">Laki - Laki</label>
+  					<input type="radio" id="jenisKelamin2" name="jenisKelamin" value="perempuan">
+  					<label for="jenisKelamin2">Perempuan</label>
+  				</td>
+			</tr>
+			<tr>
+				<td>Alamat</td>
+				<td>: <input type="text" name="alamat" id="alamat" size="80" style="height: 30px;"></td>
+			</tr>
+			<tr>
+				<td align="right">Desa / Kel.</td>
+				<td>: <input type="text" name="desa" id="desa" size="80"style="height: 20px;"></td>
+			</tr>
+			<tr>
+				<td align="right">Kecamatan</td>
+				<td>: <input type="text" name="kecamatan" id="kecamatan" size="80"style="height: 20px;"></td>
+			</tr>
+			<tr>
+				<td align="right">Kabupaten</td>
+				<td>: <input type="text" name="kabupaten" id="kabupaten" size="80"style="height: 20px;"></td>
+			</tr>
+			<tr>
+				<td align="right">Provinsi</td>
+				<td>: <input type="text" name="provinsi" id="provinsi" size="80"style="height: 20px;"></td>
+			</tr>
+			<td>Agama</td>
+				<td>: <input type="checkbox" name="check1" value="Islam">Islam
+					  <input type="checkbox" name="check1" value="Kristen">Kristen
+					  <input type="checkbox" name="check1" value="Buddha">Buddha
+					  <input type="checkbox" name="check1" value="Hindu">Hindu
+					  <input type="checkbox" name="check1" value="Katolik">Katolik
+					  <input type="checkbox" name="check1" value="Konghucu">Konghucu</td>
+            <tr>
+				<td>Email Aktif</td>
+				<td>: <input type="text" name="email" id="email" size="80"style="height: 20px;"></td>
+			</tr>
+			<tr>
+				<td><b>DATA ORANG TUA</b></td>
+			</tr>
+			<tr>
+				<td>Nomor Kartu Keluarga</td>
+				<td>: <input type="text" name="noKK" id="noKK" size="80"style="height: 20px;"></td>
+			</tr>
+			<tr>
+				<td>Nama Ayah Kandung</td>
+				<td>: <input type="text" name="namaAyah" id="namaAyah" size="80"style="height: 20px;"></td>
+			</tr>
+			<tr>
+				<td>Agama</td>
+				<td>: <input type="checkbox" name="check1" value="Islam">Islam
+					  <input type="checkbox" name="check1" value="Kristen">Kristen
+					  <input type="checkbox" name="check1" value="Buddha">Buddha
+					  <input type="checkbox" name="check1" value="Hindu">Hindu
+					  <input type="checkbox" name="check1" value="Katolik">Katolik
+					  <input type="checkbox" name="check1" value="Konghucu">Konghucu</td>
+			</tr>
+			<tr>
+				<td>Pekerjaan</td>
+				<td>: <input type="text" name="pekerjaanAyah" id="pekerjaanAyah" size="80"style="height: 20px;"></td>
+			</tr>
+			<tr>
+				<td>Nama Ibu Kandung</td>
+				<td>: <input type="text" name="namaIbu" id="namaIbu" size="80"style="height: 20px;"></td>
+			</tr>
+			<tr>
+				<td>Agama</td>
+				<td>: <input type="checkbox" name="check1" value="Islam">Islam
+					  <input type="checkbox" name="check1" value="Kristen">Kristen
+					  <input type="checkbox" name="check1" value="Buddha">Buddha
+					  <input type="checkbox" name="check1" value="Hindu">Hindu
+					  <input type="checkbox" name="check1" value="Katolik">Katolik
+					  <input type="checkbox" name="check1" value="Konghucu">Konghucu</td>
+			<tr>
+				<td>Pekerjaan</td>
+				<td>: <input type="text" name="pekerjaanIbu" id="pekerjaanIbu" size="80"style="height: 20px;"></td>
+			</tr>
+			<tr>
+				<td>Alamat Orang Tua</td>
+				<td>: <input type="text" name="alamatortu" id="ortu" size="80" style="height: 30px;"></td>
+			</tr>
+			<tr>
+				<td align="right">Desa / Kel.</td>
+				<td>: <input type="text" name="desaortu" id="desaortu" size="80"style="height: 20px;"></td>
+			</tr>
+			<tr>
+				<td align="right">Kecamatan</td>
+				<td>: <input type="text" name="kecamatanortu" id="kecamatanortu" size="80"style="height: 20px;"></td>
+			</tr>
+			<tr>
+				<td align="right">Kabupaten</td>
+				<td>: <input type="text" name="kabupatenortu" id="kabupatenortu" size="80"style="height: 20px;"></td>
+			</tr>
+			<tr>
+				<td align="right">Provinsi</td>
+				<td>: <input type="text" name="provinsiortu" id="provinsiortu" size="80"style="height: 20px;"></td>
+			</tr>
+		</table>
+		</form>
+		<hr align="center" width="100%">
+		<p align="center"><input type="submit" value="Submit" style="height: 30px; width: 100px;"></p>
+</body>
+</html>
