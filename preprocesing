@@ -1,0 +1,21 @@
+singkatan = {'find':[], 'replace':[]}
+with open('singkat.txt') as f:
+    for t in f.read().split('\n'):
+        singkatan['find'].append(t.split(',')[0].strip())
+        singkatan['replace'].append(t.split(',')[1].strip())
+print(singkatan['find'].index('yg'))
+
+# Replace kata yang disingkat
+col_from = "text_without_emoji"
+col_save = "text_rmvcustom"
+def remove_(text):
+    """custom function to remove the """
+    for i in range(len(singkatan['replace'])):
+#         if re.search(r'\b('+singkatan['find'][i]+r')\b', text):
+#             print(text)
+        text = re.sub(r'\b('+singkatan['find'][i]+r')\b', ' '+singkatan['replace'][i]+' ', text)
+    return text
+
+df[col_save] = df[col_from].apply(lambda text: remove_(text))
+COL = col_save
+df.head(5)
